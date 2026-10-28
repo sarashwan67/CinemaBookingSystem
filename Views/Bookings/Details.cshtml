@@ -1,0 +1,51 @@
+﻿@model Booking
+
+<h1 class="alert alert-info text-center">
+    Booking Details
+</h1>
+
+<div class="card mx-auto shadow" style="max-width:600px;">
+
+    <div class="card-body">
+
+        <h3>Booking #@Model.Id</h3>
+
+        <p>
+            <strong>Customer:</strong>
+            @Model.Customer.FullName
+        </p>
+
+        <p>
+            <strong>Movie:</strong>
+            @Model.ShowTime.Movie.Title
+        </p>
+
+        <p>
+            <strong>Hall:</strong>
+            @Model.Seat.CinemaHall.Name
+        </p>
+
+        <p>
+            <strong>Seat:</strong>
+            @Model.Seat.SeatNumber
+        </p>
+
+        <p>
+            <strong>Booking Date:</strong>
+            @Model.BookingDate
+        </p>
+
+        <a asp-action="GetEditView"
+           asp-route-id="@Model.Id"
+           class="btn btn-warning">
+            Edit
+        </a>
+
+        <a asp-action="GetIndexView"
+           class="btn btn-secondary">
+            Back
+        </a>
+
+    </div>
+
+</div>

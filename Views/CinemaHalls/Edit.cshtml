@@ -1,0 +1,41 @@
+﻿@model CinemaHall
+
+<h1 class="alert alert-warning text-center">
+    Edit Cinema Hall
+</h1>
+
+<form asp-action="EditCurrent"
+      method="post"
+      class="col-md-6">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Capacity"
+               class="form-label"></label>
+
+        <input asp-for="Capacity"
+               type="number"
+               class="form-control" />
+
+        <span asp-validation-for="Capacity"
+              class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-warning">
+        Save Changes
+    </button>
+
+    <a asp-action="GetIndexView"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</form>

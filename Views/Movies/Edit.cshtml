@@ -1,0 +1,106 @@
+﻿@model Movie
+
+<h1 class="alert alert-warning text-center">
+    Edit Movie
+</h1>
+
+<form asp-controller="Movies"
+      asp-action="EditCurrent"
+      method="post"
+      enctype="multipart/form-data"
+      class="col-md-6">
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="PosterPath" />
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description"
+               class="form-label"></label>
+
+        <textarea asp-for="Description"
+                  class="form-control"></textarea>
+
+        <span asp-validation-for="Description"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Duration"
+               class="form-label"></label>
+
+        <input asp-for="Duration"
+               type="number"
+               class="form-control" />
+
+        <span asp-validation-for="Duration"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Genre"
+               class="form-label"></label>
+
+        <input asp-for="Genre"
+               class="form-control" />
+
+        <span asp-validation-for="Genre"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ReleaseDate"
+               class="form-label"></label>
+
+        <input asp-for="ReleaseDate"
+               type="date"
+               class="form-control" />
+
+        <span asp-validation-for="ReleaseDate"
+              class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+
+        <label class="form-label">
+            Current Poster
+        </label>
+
+        <br />
+
+        <img src="@Model.PosterPath"
+             style="width:150px;height:200px;object-fit:cover;"
+             class="mb-2" />
+
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="PosterFile"
+               class="form-label">
+            Change Poster
+        </label>
+
+        <input asp-for="PosterFile"
+               type="file"
+               class="form-control" />
+
+    </div>
+
+    <button type="submit"
+            class="btn btn-warning">
+        Save Changes
+    </button>
+
+    <a asp-action="GetIndexView"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</form>

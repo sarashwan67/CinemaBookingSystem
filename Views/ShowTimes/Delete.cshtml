@@ -1,0 +1,53 @@
+﻿@model ShowTime
+
+<h1 class="alert alert-danger text-center">
+    Delete Show Time
+</h1>
+
+<div class="card mx-auto shadow" style="max-width:600px;">
+
+    <div class="card-body text-center">
+
+        <h3>
+            @Model.Movie.Title
+        </h3>
+
+        <p>
+            Cinema Hall:
+            @Model.CinemaHall.Name
+        </p>
+
+        <p>
+            Date:
+            @Model.Date.ToShortDateString()
+        </p>
+
+        <p>
+            Start Time:
+            @Model.StartTime
+        </p>
+
+        <p>
+            Are you sure you want to delete this show time?
+        </p>
+
+        <form asp-action="Delete" method="post">
+
+            <input type="hidden"
+                   name="id"
+                   value="@Model.Id" />
+
+            <button class="btn btn-danger">
+                Delete
+            </button>
+
+            <a asp-action="GetIndexView"
+               class="btn btn-secondary">
+                Cancel
+            </a>
+
+        </form>
+
+    </div>
+
+</div>

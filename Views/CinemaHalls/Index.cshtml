@@ -1,0 +1,90 @@
+﻿@model List<CinemaHall>
+
+<h1 class="alert alert-info text-center">
+    Cinema Halls
+</h1>
+
+<a asp-action="GetCreateView"
+   class="btn btn-success mb-3">
+    Add New Hall
+</a>
+
+<form asp-action="GetIndexView"
+      method="get"
+      class="row mb-4">
+
+    <div class="col-6">
+        <input type="text"
+               name="search"
+               value="@ViewBag.CurrentSearch"
+               class="form-control"
+               placeholder="Search by hall name..." />
+    </div>
+
+    <div class="col-3">
+        <select name="sortType" class="form-select">
+            <option value="">Sort By</option>
+            <option value="Name">Name</option>
+            <option value="Capacity">Capacity</option>
+        </select>
+    </div>
+
+    <div class="col-2">
+        <select name="sortOrder" class="form-select">
+            <option value="">Order</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+    </div>
+
+    <div class="col-1">
+        <button class="btn btn-primary">
+            Go
+        </button>
+    </div>
+
+</form>
+
+<table class="table table-bordered table-hover">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Capacity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var hall in Model)
+        {
+            <tr>
+                <td>@hall.Name</td>
+                <td>@hall.Capacity</td>
+
+                <td>
+                    <a asp-action="GetDetailsView"
+                       asp-route-id="@hall.Id"
+                       class="btn btn-info">
+                        Details
+                    </a>
+
+                    <a asp-action="GetEditView"
+                       asp-route-id="@hall.Id"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="GetDeleteView"
+                       asp-route-id="@hall.Id"
+                       class="btn btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

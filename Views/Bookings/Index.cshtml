@@ -1,0 +1,75 @@
+﻿@model List<Booking>
+
+<h1 class="alert alert-info text-center">
+    Bookings
+</h1>
+
+<a asp-action="GetCreateView"
+   class="btn btn-success mb-3">
+    Add New Booking
+</a>
+
+<table class="table table-bordered table-hover">
+
+    <thead class="table-dark">
+
+        <tr>
+            <th>Customer</th>
+            <th>Movie</th>
+            <th>Seat</th>
+            <th>Booking Date</th>
+            <th>Actions</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var booking in Model)
+        {
+            <tr>
+
+                <td>
+                    @booking.Customer.FullName
+                </td>
+
+                <td>
+                    @booking.ShowTime.Movie.Title
+                </td>
+
+                <td>
+                    @booking.Seat.SeatNumber
+                </td>
+
+                <td>
+                    @booking.BookingDate
+                </td>
+
+                <td>
+
+                    <a asp-action="GetDetailsView"
+                       asp-route-id="@booking.Id"
+                       class="btn btn-info">
+                        Details
+                    </a>
+
+                    <a asp-action="GetEditView"
+                       asp-route-id="@booking.Id"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="GetDeleteView"
+                       asp-route-id="@booking.Id"
+                       class="btn btn-danger">
+                        Delete
+                    </a>
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

@@ -1,0 +1,116 @@
+﻿@model List<Movie>
+
+<h1 class="alert alert-info text-center">Movies</h1>
+
+<div class="mb-3">
+    <a asp-controller="Movies"
+       asp-action="GetCreateView"
+       class="btn btn-success">
+        Add New Movie
+    </a>
+</div>
+
+<form asp-controller="Movies"
+      asp-action="GetIndexView"
+      method="get"
+      class="row mb-4">
+
+    <div class="col-5">
+        <input type="text"
+               name="search"
+               value="@ViewBag.CurrentSearch"
+               class="form-control"
+               placeholder="Search by title or genre..." />
+    </div>
+
+    <div class="col-2">
+        <select name="sortType" class="form-select">
+            <option value="">Sort By</option>
+            <option value="Title">Title</option>
+            <option value="Genre">Genre</option>
+            <option value="Duration">Duration</option>
+        </select>
+    </div>
+
+    <div class="col-2">
+        <select name="sortOrder" class="form-select">
+            <option value="">Order</option>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+    </div>
+
+    <div class="col-2">
+        <button class="btn btn-primary" type="submit">
+            Search
+        </button>
+    </div>
+</form>
+
+<div class="row">
+
+    @foreach (var movie in Model)
+    {
+        <div class="col-md-4 mb-4">
+
+            <div class="card h-100 shadow">
+
+                <img src="@movie.PosterPath"
+                     class="card-img-top"
+                     style="object-fit:cover;" />
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        @movie.Title
+                    </h5>
+
+                    <p class="card-text">
+                        @movie.Description
+                    </p>
+
+                    <p>
+                        <strong>Genre:</strong>
+                        @movie.Genre
+                    </p>
+
+                    <p>
+                        <strong>Duration:</strong>
+                        @movie.Duration minutes
+                    </p>
+
+                    <p>
+                        <strong>Release Date:</strong>
+                        @movie.ReleaseDate.ToShortDateString()
+                    </p>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <a asp-action="GetDetailsView"
+                       asp-route-id="@movie.Id"
+                       class="btn btn-info">
+                        Details
+                    </a>
+
+                    <a asp-action="GetEditView"
+                       asp-route-id="@movie.Id"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="GetDeleteView"
+                       asp-route-id="@movie.Id"
+                       class="btn btn-danger">
+                        Delete
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    }
+
+</div>

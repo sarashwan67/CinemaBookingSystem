@@ -1,0 +1,41 @@
+﻿@model ShowTime
+
+<h1 class="alert alert-info text-center">
+    Show Time Details
+</h1>
+
+<div class="card mx-auto shadow" style="max-width:600px;">
+
+    <div class="card-body">
+
+        <h3>@Model.Movie.Title</h3>
+
+        <p>
+            <strong>Cinema Hall:</strong>
+            @Model.CinemaHall.Name
+        </p>
+
+        <p>
+            <strong>Date:</strong>
+            @Model.Date.ToShortDateString()
+        </p>
+
+        <p>
+            <strong>Start Time:</strong>
+            @Model.StartTime
+        </p>
+
+        <a asp-action="GetEditView"
+           asp-route-id="@Model.Id"
+           class="btn btn-warning">
+            Edit
+        </a>
+
+        <a asp-action="GetIndexView"
+           class="btn btn-secondary">
+            Back
+        </a>
+
+    </div>
+
+</div>

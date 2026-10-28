@@ -1,0 +1,80 @@
+﻿@model List<Seat>
+
+<h1 class="alert alert-info text-center">
+    Seats
+</h1>
+
+<a asp-action="GetCreateView"
+   class="btn btn-success mb-3">
+    Add New Seat
+</a>
+
+<form asp-action="GetIndexView"
+      method="get"
+      class="row mb-4">
+
+    <div class="col-8">
+        <input name="search"
+               value="@ViewBag.CurrentSearch"
+               class="form-control"
+               placeholder="Search seat or hall..." />
+    </div>
+
+    <div class="col-2">
+        <button class="btn btn-primary">
+            Search
+        </button>
+    </div>
+
+</form>
+
+<table class="table table-bordered">
+
+    <thead class="table-dark">
+
+        <tr>
+            <th>Seat Number</th>
+            <th>Cinema Hall</th>
+            <th>Actions</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var seat in Model)
+        {
+            <tr>
+                <td>@seat.SeatNumber</td>
+
+                <td>
+                    @seat.CinemaHall.Name
+                </td>
+
+                <td>
+
+                    <a asp-action="GetDetailsView"
+                       asp-route-id="@seat.Id"
+                       class="btn btn-info">
+                        Details
+                    </a>
+
+                    <a asp-action="GetEditView"
+                       asp-route-id="@seat.Id"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="GetDeleteView"
+                       asp-route-id="@seat.Id"
+                       class="btn btn-danger">
+                        Delete
+                    </a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

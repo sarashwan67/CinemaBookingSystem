@@ -1,0 +1,73 @@
+﻿@model List<ShowTime>
+
+<h1 class="alert alert-info text-center">
+    Show Times
+</h1>
+
+<a asp-action="GetCreateView"
+   class="btn btn-success mb-3">
+    Add New Show Time
+</a>
+
+<table class="table table-bordered table-hover">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Movie</th>
+            <th>Cinema Hall</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var show in Model)
+        {
+            <tr>
+
+                <td>
+                    @show.Movie.Title
+                </td>
+
+                <td>
+                    @show.CinemaHall.Name
+                </td>
+
+                <td>
+                    @show.Date.ToShortDateString()
+                </td>
+
+                <td>
+                    @show.StartTime
+                </td>
+
+                <td>
+
+                    <a asp-action="GetDetailsView"
+                       asp-route-id="@show.Id"
+                       class="btn btn-info">
+                        Details
+                    </a>
+
+                    <a asp-action="GetEditView"
+                       asp-route-id="@show.Id"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="GetDeleteView"
+                       asp-route-id="@show.Id"
+                       class="btn btn-danger">
+                        Delete
+                    </a>
+
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+
+</table>

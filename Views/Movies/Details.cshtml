@@ -1,0 +1,64 @@
+﻿@model Movie
+
+<h1 class="alert alert-info text-center">
+    Movie Details
+</h1>
+
+<div class="card mx-auto shadow"
+     style="max-width:700px;">
+
+    <div class="row g-0">
+
+        <div class="col-md-5">
+
+            <img src="@Model.PosterPath"
+                 class="img-fluid rounded-start"
+                 style="height:100%; object-fit:cover;" />
+
+        </div>
+
+        <div class="col-md-7">
+
+            <div class="card-body">
+
+                <h2>
+                    @Model.Title
+                </h2>
+
+                <p>
+                    @Model.Description
+                </p>
+
+                <p>
+                    <strong>Genre:</strong>
+                    @Model.Genre
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    @Model.Duration minutes
+                </p>
+
+                <p>
+                    <strong>Release Date:</strong>
+                    @Model.ReleaseDate.ToShortDateString()
+                </p>
+
+                <a asp-action="GetEditView"
+                   asp-route-id="@Model.Id"
+                   class="btn btn-warning">
+                    Edit
+                </a>
+
+                <a asp-action="GetIndexView"
+                   class="btn btn-secondary">
+                    Back
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

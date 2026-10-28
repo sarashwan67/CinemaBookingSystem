@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CinemaBookingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\controllers\\seatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\controllers\\seatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\controllers\\cinemahallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\controllers\\cinemahallscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\controllers\\showtimescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\controllers\\showtimescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|d:\\cinemabookingsystem\\cinemabookingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D30F16-896F-4D7E-A024-D11DB882A796}|CinemaBookingSystem\\CinemaBookingSystem.csproj|solutionrelative:cinemabookingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 405,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Models\\Customer.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Models\\Customer.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Models\\Customer.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:37:53.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShowTimesController.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\ShowTimesController.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Controllers\\ShowTimesController.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\ShowTimesController.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Controllers\\ShowTimesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:32:24.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeatsController.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\SeatsController.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Controllers\\SeatsController.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\SeatsController.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Controllers\\SeatsController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAA/wH8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:31:27.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CinemaHallsController.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\CinemaHallsController.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Controllers\\CinemaHallsController.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\CinemaHallsController.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Controllers\\CinemaHallsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:31:09.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:27:59.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Models\\Movie.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Models\\Movie.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:19:19.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Controllers\\MoviesController.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:17:54.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Controllers\\CustomersController.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T06:00:24.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Controllers\\BookingsController.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAA0wMQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T05:59:00.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "CinemaBookingSystem\\Program.cs",
+              "ToolTip": "D:\\CinemaBookingSystem\\CinemaBookingSystem\\Program.cs",
+              "RelativeToolTip": "CinemaBookingSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-25T05:31:28.471Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

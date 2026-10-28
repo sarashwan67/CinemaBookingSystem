@@ -1,0 +1,131 @@
+﻿@model Booking
+
+<h1 class="alert alert-warning text-center">
+    Edit Booking
+</h1>
+
+<form asp-action="EditCurrent"
+      method="post"
+      class="col-md-6">
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="BookingDate" />
+
+    <div class="mb-3">
+
+        <label asp-for="CustomerId"
+               class="form-label">
+            Customer
+        </label>
+
+        <select asp-for="CustomerId"
+                asp-items="ViewBag.AllCustomers"
+                class="form-select">
+        </select>
+
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="ShowTimeId"
+               class="form-label">
+            Show Time
+        </label>
+
+        <select name="ShowTimeId"
+                id="showTimeSelect"
+                class="form-select">
+
+            @foreach (var st in (IEnumerable<dynamic>)ViewBag.AllShowTimes)
+            {
+                <option value="@st.Id"
+                        data-hall="@st.CinemaHallId"
+                        selected="@(Model.ShowTimeId == st.Id)">
+                    @st.Text
+                </option>
+            }
+
+        </select>
+
+        <span asp-validation-for="ShowTimeId"
+              class="text-danger"></span>
+
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="SeatId"
+               class="form-label">
+            Seat
+        </label>
+
+        <select name="SeatId"
+                id="seatSelect"
+                class="form-select">
+
+            @foreach (var seat in (IEnumerable<dynamic>)ViewBag.AllSeats)
+            {
+                <option value="@seat.Id"
+                        data-hall="@seat.CinemaHallId"
+                        selected="@(Model.SeatId == seat.Id)">
+                    @seat.Text
+                </option>
+            }
+
+        </select>
+
+        <span asp-validation-for="SeatId"
+              class="text-danger"></span>
+
+    </div>
+
+    <button class="btn btn-warning">
+        Save Changes
+    </button>
+
+    <a asp-action="GetIndexView"
+       class="btn btn-secondary">
+        Back
+    </a>
+
+</form>
+
+@section Scripts {
+    <script>
+        function filterSeatsByHall() {
+            var showTimeSelect = document.getElementById("showTimeSelect");
+            var seatSelect = document.getElementById("seatSelect");
+            var selectedOption = showTimeSelect.options[showTimeSelect.selectedIndex];
+            var hallId = selectedOption ? selectedOption.getAttribute("data-hall") : null;
+            var currentSeatValue = seatSelect.value;
+            var hasValidSelection = false;
+
+            for (var i = 0; i < seatSelect.options.length; i++) {
+                var opt = seatSelect.options[i];
+
+                if (opt.value === "") {
+                    opt.hidden = false;
+                    continue;
+                }
+
+                var seatHall = opt.getAttribute("data-hall");
+                var matches = !hallId || seatHall === hallId;
+                opt.hidden = !matches;
+
+                if (matches && opt.value === currentSeatValue) {
+                    hasValidSelection = true;
+                }
+            }
+
+            if (!hasValidSelection) {
+                seatSelect.value = "";
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var showTimeSelect = document.getElementById("showTimeSelect");
+            showTimeSelect.addEventListener("change", filterSeatsByHall);
+            filterSeatsByHall();
+        });
+    </script>
+}

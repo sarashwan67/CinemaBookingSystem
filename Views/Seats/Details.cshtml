@@ -1,0 +1,33 @@
+﻿@model Seat
+
+<h1 class="alert alert-info text-center">
+    Seat Details
+</h1>
+
+<div class="card mx-auto shadow" style="max-width:600px;">
+
+    <div class="card-body">
+
+        <h3>
+            Seat @Model.SeatNumber
+        </h3>
+
+        <p>
+            <strong>Cinema Hall:</strong>
+            @Model.CinemaHall.Name
+        </p>
+
+        <a asp-action="GetEditView"
+           asp-route-id="@Model.Id"
+           class="btn btn-warning">
+            Edit
+        </a>
+
+        <a asp-action="GetIndexView"
+           class="btn btn-secondary">
+            Back
+        </a>
+
+    </div>
+
+</div>

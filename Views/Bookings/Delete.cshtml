@@ -1,0 +1,51 @@
+﻿@model Booking
+
+<h1 class="alert alert-danger text-center">
+    Delete Booking
+</h1>
+
+<div class="card mx-auto shadow" style="max-width:600px;">
+
+    <div class="card-body text-center">
+
+        <h3>Booking #@Model.Id</h3>
+
+        <p>
+            Customer:
+            @Model.Customer.FullName
+        </p>
+
+        <p>
+            Movie:
+            @Model.ShowTime.Movie.Title
+        </p>
+
+        <p>
+            Seat:
+            @Model.Seat.SeatNumber
+        </p>
+
+        <p>
+            Are you sure you want to delete this booking?
+        </p>
+
+        <form asp-action="Delete" method="post">
+
+            <input type="hidden"
+                   name="id"
+                   value="@Model.Id" />
+
+            <button class="btn btn-danger">
+                Delete
+            </button>
+
+            <a asp-action="GetIndexView"
+               class="btn btn-secondary">
+                Cancel
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
